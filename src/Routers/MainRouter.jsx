@@ -4,7 +4,7 @@ import Navbar from "../Header/Navbar";
 const MainRouter = () => {
     return (
         <div>
-             <div className="md:w-[85%] mx-auto">
+             <div className="w-[93%] md:w-[85%] mx-auto">
              <Navbar></Navbar>
              <Outlet></Outlet>
              </div>
