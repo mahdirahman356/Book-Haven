@@ -4,7 +4,7 @@
         "bookName": "The Silent Patient",
         "author": "Alex Michaelides",
         "image": "https://i.ibb.co/bQXGffj/kindpng-2592315-1.png",
-        "review": "A gripping psychological thriller that keeps you guessing until the very end.",
+        "review": "In 'The Silent Patient,' Alex Michaelides crafts a gripping psychological thriller that enthralls readers from the very first page to the shocking conclusion. The story revolves around Alicia Berenson, a celebrated painter who seemingly has it all until she inexplicably murders her husband and then retreats into silence. Theo Faber, a forensic psychologist, becomes obsessed with unraveling Alicia's dark and enigmatic past, delving deep into her psyche to uncover the truth behind her silence. As the layers of deception and intrigue are peeled away, Theo finds himself confronting his own demons while racing against time to solve the mystery of Alicia's silence and the chilling secrets it conceals.",
         "totalPages": 336,
         "rating": 4.5,
         "category": "Mystery",
@@ -17,7 +17,7 @@
         "bookName": "Educated",
         "author": "Tara Westover",
         "image": "https://i.ibb.co/vYDDRgF/kindpng-5624060-1.png",
-        "review": "A compelling memoir of resilience and the pursuit of knowledge against all odds.",
+        "review": "Tara Westover's 'Educated' is a profound memoir chronicling her journey from a survivalist family in the mountains of Idaho to the hallowed halls of Cambridge University. Through sheer determination and a thirst for knowledge, Westover overcomes immense obstacles, including a lack of formal education and familial resistance, to pursue her dreams. Her story is one of resilience, self-discovery, and the transformative power of education. 'Educated' is a testament to the human spirit's capacity to overcome adversity and achieve greatness.",
         "totalPages": 352,
         "rating": 4.7,
         "category": "Biography",
@@ -30,7 +30,7 @@
         "bookName": "1984",
         "author": "George Orwell",
         "image": "https://i.ibb.co/WpvmPrK/kindpng-2193744-1.png",
-        "review": "A timeless classic that explores themes of totalitarianism, surveillance, and truth.",
+        "review": "George Orwell's '1984' is a chilling dystopian novel that remains eerily relevant in today's world. Set in a totalitarian society dominated by surveillance and propaganda, the novel follows Winston Smith, a disillusioned citizen who rebels against the oppressive regime. Orwell's vision of a dystopian future, where truth is subjective and freedom is non-existent, serves as a stark warning against the dangers of totalitarianism and the erosion of individual liberty. '1984' is a haunting exploration of power, control, and the struggle for truth in a world consumed by deception.",
         "totalPages": 328,
         "rating": 4.8,
         "category": "Dystopian Fiction",
@@ -43,7 +43,7 @@
         "bookName": "The Great Gatsby",
         "author": "F. Scott Fitzgerald",
         "image": "https://i.ibb.co/Fxw8sJ4/kindpng-81724-1.png",
-        "review": "An exquisite portrayal of the Jazz Age and the American Dream.",
+        "review": "F. Scott Fitzgerald's 'The Great Gatsby' is a timeless masterpiece that captures the essence of the Roaring Twenties with its vivid portrayal of wealth, excess, and disillusionment. Set against the backdrop of lavish parties and extravagant lifestyles, the novel follows Jay Gatsby, a mysterious and enigmatic millionaire, as he pursues the elusive American Dream and seeks to win back the love of his life, Daisy Buchanan. Through the eyes of narrator Nick Carraway, Fitzgerald explores themes of love, betrayal, and the corrupting influence of wealth, ultimately delivering a poignant commentary on the emptiness of materialism and the fleeting nature of happiness.",
         "totalPages": 180,
         "rating": 4.4,
         "category": "Classic",
@@ -56,7 +56,7 @@
         "bookName": "To Kill a Mockingbird",
         "author": "Harper Lee",
         "image": "https://i.ibb.co/t3XQ3Xb/kindpng-4022054-1.png",
-        "review": "A powerful narrative addressing racial injustice and moral growth.",
+        "review": "Harper Lee's 'To Kill a Mockingbird' is a profound and timeless exploration of morality, justice, and racial inequality in the American South. Through the eyes of young Scout Finch, the novel depicts her father, Atticus Finch, a principled lawyer who defends a black man falsely accused of raping a white woman. As Scout and her brother Jem navigate the complexities of race and class in their small town, they confront prejudice, injustice, and the harsh realities of the adult world. 'To Kill a Mockingbird' is a powerful reminder of the importance of empathy, integrity, and standing up for what is right, even in the face of overwhelming adversity.",
         "totalPages": 336,
         "rating": 4.6,
         "category": "Fiction",
@@ -69,7 +69,7 @@
         "bookName": "The Catcher in the Rye",
         "author": "J.D. Salinger",
         "image": "https://i.ibb.co/0m6XnN5/kindpng-1064993.png",
-        "review": "A quintessential coming-of-age story that resonates with adolescents and adults alike.",
+        "review": "J.D. Salinger's 'The Catcher in the Rye' is a seminal coming-of-age novel that has resonated with readers for generations. Through the voice of Holden Caulfield, a disenchanted and rebellious teenager, Salinger explores themes of alienation, identity, and the search for authenticity in a world perceived as phony and superficial. As Holden embarks on a journey of self-discovery through the streets of New York City, he grapples with the complexities of adolescence and the loss of innocence. 'The Catcher in the Rye' remains a timeless and enduring classic that continues to speak to the universal struggles of youth and the quest for meaning in an uncertain world.",
         "totalPages": 224,
         "rating": 4.3,
         "category": "Fiction",
@@ -78,3 +78,4 @@
         "yearOfPublishing": 1951
     }
 ]
+

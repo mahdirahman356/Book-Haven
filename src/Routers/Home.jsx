@@ -11,7 +11,7 @@ const Home = () => {
     },[])
     return (
         <div>
-            <div className="hero min-h-[75vh] bg-base-200 mt-14 rounded-2xl">
+            <div className="hero min-h-[75vh] bg-base-200 mt-14 rounded-[30px]">
   <div className="hero-content flex-col lg:flex-row-reverse">
     <img src={HeroImg} />
     <div>
@@ -22,12 +22,15 @@ const Home = () => {
     </div>
   </div>
 </div>
+     <div>
+      <h1 className='text-center font-bold text-3xl my-12'>Books</h1>
+     </div>
 
-     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 md:mt-20">
+     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 my-8 md:my-20">
      {
       book.map((books,index)=> <Books 
       key={index}
-      book={book}
+      books={books}
       ></Books>)
      }
      </div>
