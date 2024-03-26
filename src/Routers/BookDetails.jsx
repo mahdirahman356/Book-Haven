@@ -16,6 +16,7 @@ const BookDetails = () => {
     }
     let handleWishButton = () => {
       saveToStoregeAddWish(book)
+      saveToStorege(book)
     }
     
     return (

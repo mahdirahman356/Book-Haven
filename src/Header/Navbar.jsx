@@ -23,6 +23,8 @@ const Navbar = () => {
      <NavLink to="/" className={({isActive})=> isActive ? "text-[#23BE0A] border-[#23BE0A] border-[1px] px-4 py-2 rounded-lg" : ''}><li>Home</li></NavLink>
      <NavLink to="/listed" className={({isActive})=> isActive ? "text-[#23BE0A] border-[#23BE0A] border-[1px] px-4 py-2 rounded-lg" : ''}><li>Listed Books</li></NavLink>
      <NavLink to="/redePage" className={({isActive})=> isActive ? "text-[#23BE0A] border-[#23BE0A] border-[1px] px-4 py-2 rounded-lg" : ''}><li>Pages to Read</li></NavLink>
+     <NavLink to="/blog" className={({isActive})=> isActive ? "text-[#23BE0A] border-[#23BE0A] border-[1px] px-4 py-2 rounded-lg" : ''}><li>Blogs</li></NavLink>
+
     </ul>
   </div>
   <div className="navbar-end">
