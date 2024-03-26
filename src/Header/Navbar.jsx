@@ -11,9 +11,9 @@ const Navbar = () => {
         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
       </div>
       <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1]  shadow bg-base-100 rounded-box ">
-      <li>Home</li>
-      <li>Listed Books</li>
-      <li>Pages to Read</li>
+      <NavLink to="/" className={({isActive})=> isActive ? "text-[#23BE0A] border-[#23BE0A] border-[1px] px-4 py-2 rounded-lg" : ''}><li>Home</li></NavLink>
+     <NavLink to="/listed" className={({isActive})=> isActive ? "text-[#23BE0A] border-[#23BE0A] border-[1px] px-4 py-2 rounded-lg" : ''}><li>Listed Books</li></NavLink>
+     <NavLink to="/redePage" className={({isActive})=> isActive ? "text-[#23BE0A] border-[#23BE0A] border-[1px] px-4 py-2 rounded-lg" : ''}><li>Pages to Read</li></NavLink>
       </ul>
     </div>
     <h4 className=" ml-2 btn-ghost text-[18px] md:text-2xl font-bold">Book Vibe</h4>
@@ -22,7 +22,7 @@ const Navbar = () => {
     <ul className="menu menu-horizontal px-1 gap-7 font-semibold text-gray-500 items-center">
      <NavLink to="/" className={({isActive})=> isActive ? "text-[#23BE0A] border-[#23BE0A] border-[1px] px-4 py-2 rounded-lg" : ''}><li>Home</li></NavLink>
      <NavLink to="/listed" className={({isActive})=> isActive ? "text-[#23BE0A] border-[#23BE0A] border-[1px] px-4 py-2 rounded-lg" : ''}><li>Listed Books</li></NavLink>
-     <NavLink><li>Pages to Rea</li></NavLink>
+     <NavLink to="/redePage" className={({isActive})=> isActive ? "text-[#23BE0A] border-[#23BE0A] border-[1px] px-4 py-2 rounded-lg" : ''}><li>Pages to Read</li></NavLink>
     </ul>
   </div>
   <div className="navbar-end">

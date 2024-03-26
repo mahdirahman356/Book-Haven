@@ -1,6 +1,7 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import { saveToStorege } from "../Storege/Storege";
 import  { Toaster } from 'react-hot-toast';
+import { saveToStoregeAddWish } from "../Storege/Storege2";
 
 const BookDetails = () => {
     let books = useLoaderData()
@@ -8,9 +9,13 @@ const BookDetails = () => {
     let idInt = parseInt(id)
    
  let book = books.find(books => books.bookId === idInt)
-       let {image,bookName,author,tags,rating,category,review,totalPages,publisher,yearOfPublishing} = book
-       let  handleReadButton = () => {
+     let {image,bookName,author,tags,rating,category,review,totalPages,publisher,yearOfPublishing} = book
+  
+   let  handleReadButton = () => {
         saveToStorege(book)
+    }
+    let handleWishButton = () => {
+      saveToStoregeAddWish(book)
     }
     
     return (
@@ -64,7 +69,7 @@ const BookDetails = () => {
 
 
         <button onClick={handleReadButton} className="btn btn-outline border-gray-300">Read</button>
-        <button className="btn ml-2 bg-[#50B1C9] text-white">Wishlist</button>  
+        <button onClick={handleWishButton} className="btn ml-2 bg-[#50B1C9] text-white">Wishlist</button>  
       <Toaster></Toaster>
     </div>
   </div>
