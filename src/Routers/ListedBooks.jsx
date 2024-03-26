@@ -3,7 +3,7 @@ import { Link, Outlet } from "react-router-dom";
 
 const ListedBooks = () => {
 
-    let [tabs,setTabs] = useState(0)
+    let [tabs,setTabs] = useState(0) 
     return (
         <div>
             <div className="text-2xl font-bold text-center py-7 bg-[#1313130D] mt-5 rounded-xl">
@@ -23,15 +23,21 @@ const ListedBooks = () => {
     <Link to="wish" onClick={()=>setTabs(1)} className={`flex items-center flex-shrink-0 px-5 py-3 space-x-2  border-gray-400 ${tabs === 1 ? "border border-b-0" : "border-b"}  text-gray-400 rounded-t-xl`} >
 		<span>Wishlist Books</span>
 	</Link>
-    
-
-
-	<p className="flex  px-5 py-6 border-b border-gray-400 text-gray-400 w-full">
+    <p className="flex  px-5 py-6 border-b border-gray-400 text-gray-400 w-full">
 	</p>
 	
 </div>
-    
-            </div>
+          <div className="flex justify-center mt-9 mb-20">
+        <div className="dropdown dropdown-end">
+            <div tabIndex={0} role="button" className="btn m-1 text-white bg-[#23BE0A]">Sort By</div>
+            <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Item 1</a></li>
+              <li><a>Item 2</a></li>
+            </ul>
+          </div>
+           </div>
+          </div>
+           
             <Outlet></Outlet>
         </div>
     );

@@ -14,6 +14,7 @@ import PagesToRead from './Routers/PagesToRead';
 import Read from './Routers/Read';
 import WishList from './Routers/WishList';
 import Blog from './Routers/Blog';
+import Resources from './Routers/Resources';
 const router = createBrowserRouter([
   {
     path : "/",
@@ -33,6 +34,11 @@ const router = createBrowserRouter([
         loader :()=> fetch('/public/Blogs.json'),
         element : <Blog></Blog>
       },
+      {
+        path : '/resources',
+        loader : ()=> fetch('/public/Resources.json'),
+        element : <Resources></Resources>
+       },
       
       {
         path : "/listed",

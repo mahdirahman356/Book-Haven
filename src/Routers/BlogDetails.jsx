@@ -8,11 +8,12 @@ const BlogDetails = ({blog}) => {
         <div>
             <div className="hero mb-10 rounded-xl">
   <div className="hero-content flex-col lg:flex-row">
-    <img src={image} className="md:max-w-lg rounded-lg shadow-2xl" />
+    <img src={image} className=" md:max-w-lg rounded-lg shadow-2xl" />
     <div>
-      <h1 className="text-4xl font-bold">{title}</h1>
+      <h1 className="text-2xl md:text-3xl font-bold">{title}</h1>
       <p className="py-6">{content}</p>
-      <div className="flex gap-12 my-3">
+      <div className="flex flex-col md:flex-row md:gap-12 my-3 mb-6">
+
         <p className="text-gray-500">{hashtags[0]}</p>
         <p className="text-gray-500">{hashtags[1]}</p>
         <p className="text-gray-500">{hashtags[2]}</p>

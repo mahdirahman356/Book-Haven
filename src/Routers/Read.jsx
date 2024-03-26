@@ -6,12 +6,11 @@ import { Link } from "react-router-dom";
 
 const Read = () => {
     let read = getBooks()
-    console.log(read)
     return (
         <div>
 
           {
-            read.map((read,index)=>  <div key={index} className="flex flex-col md:flex-row  bg-base-100 shadow-xl my-7">
+            read.map((read,index)=>  <div key={index} className="flex flex-col md:flex-row  bg-base-100 shadow-xl my-7 rounded-xl">
             <figure className="px-10 py-6 md:w-[30%] flex justify-center items-center">
               <div className="w-full bg-[#F3F3F3] py-6 flex justify-center items-center rounded-xl">
               <img src={read.image} />

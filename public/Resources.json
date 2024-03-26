@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "title": "Classic Novels Everyone Should Read",
+        "description": "Explore the timeless allure of classic literature with our handpicked selection of novels. From Harper Lee's 'To Kill a Mockingbird' and George Orwell's '1984' to Jane Austen's 'Pride and Prejudice,' these masterpieces offer profound insights into humanity's struggles and triumphs. Experience the moral dilemmas of 'To Kill a Mockingbird,' confront the dystopian reality of '1984,' and revel in the romance of 'Pride and Prejudice.' Whether you're a seasoned reader or just starting your literary journey, these classics promise to captivate and inspire."
+    },
+    {
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "year": 1960,
+      "genre": "Fiction",
+      "summary": "Step into the racially charged atmosphere of the Deep South during the Great Depression as Scout Finch, alongside her father Atticus, confronts the harsh realities of prejudice, injustice, and morality. Harper Lee's 'To Kill a Mockingbird' is a timeless exploration of compassion, empathy, and the quest for truth in a society divided by race and class.",
+      "link": "https://example.com/to-kill-a-mockingbird"
+    },
+    {
+      "title": "1984",
+      "author": "George Orwell",
+      "year": 1949,
+      "genre": "Dystopian Fiction",
+      "summary": "Journey into the nightmarish world of '1984,' where the oppressive regime of Big Brother reigns supreme, and individual freedom is but a distant memory. George Orwell's dystopian masterpiece serves as a chilling warning against the dangers of totalitarianism, surveillance, and the manipulation of truth. Through the eyes of Winston Smith, readers witness a desperate struggle for autonomy and truth in a world dominated by oppression and fear.",
+      "link": "https://example.com/1984"
+    },
+    {
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "year": 1813,
+      "genre": "Romance",
+      "summary": "Enter the elegant world of Regency-era England, where societal conventions dictate the course of romance and marriage. Jane Austen's 'Pride and Prejudice' follows the spirited Elizabeth Bennet as she navigates the complexities of love, pride, and societal expectations. With its sharp wit, memorable characters, and timeless romance, this beloved classic continues to enchant readers with its exploration of the triumph of love over prejudice.",
+      "link": "https://example.com/pride-and-prejudice"
+    }
+  ]
+  
