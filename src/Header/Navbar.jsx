@@ -10,12 +10,12 @@ const Navbar = () => {
       <div tabIndex={0} role="button" className=" btn-ghost lg:hidden">
         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
       </div>
-      <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1]  shadow bg-base-100 rounded-box ">
-      <NavLink to="/" className={({isActive})=> isActive ? "text-[#23BE0A] border-[#23BE0A] border-[1px] px-4 py-2 rounded-lg" : ''}><li>Home</li></NavLink>
-     <NavLink to="/listed" className={({isActive})=> isActive ? "text-[#23BE0A] border-[#23BE0A] border-[1px] px-4 py-2 rounded-lg" : ''}><li>Listed Books</li></NavLink>
-     <NavLink to="/redePage" className={({isActive})=> isActive ? "text-[#23BE0A] border-[#23BE0A] border-[1px] px-4 py-2 rounded-lg" : ''}><li>Pages to Read</li></NavLink>
-     <NavLink to="/blog" className={({isActive})=> isActive ? "text-[#23BE0A] border-[#23BE0A] border-[1px] px-4 py-2 rounded-lg" : ''}><li>Blogs</li></NavLink>
-     <NavLink to="/resources" className={({isActive})=> isActive ? "text-[#23BE0A] border-[#23BE0A] border-[1px] px-4 py-2 rounded-lg" : ''}><li>Resources</li></NavLink>
+      <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] shadow bg-base-100 rounded-box p-6 w-[150px]">
+      <NavLink to="/" className={({isActive})=> isActive ? "text-[#23BE0A] rounded-lg" : ''}><li>Home</li></NavLink>
+     <NavLink to="/listed" className={({isActive})=> isActive ? "text-[#23BE0A] rounded-lg" : ''}><li>Listed Books</li></NavLink>
+     <NavLink to="/redePage" className={({isActive})=> isActive ? "text-[#23BE0A] rounded-lg" : ''}><li>Pages to Read</li></NavLink>
+     <NavLink to="/blog" className={({isActive})=> isActive ? "text-[#23BE0A] rounded-lg" : ''}><li>Blogs</li></NavLink>
+     <NavLink to="/resources" className={({isActive})=> isActive ? "text-[#23BE0A] rounded-lg" : ''}><li>Resources</li></NavLink>
       </ul>
     </div>
     <h4 className=" ml-2 btn-ghost text-[18px] md:text-2xl font-bold">Book Vibe</h4>

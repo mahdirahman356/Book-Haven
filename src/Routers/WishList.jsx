@@ -1,15 +1,55 @@
-import { getAddWish } from "../Storege/Storege";
 import { CiLocationOn } from "react-icons/ci";
 import { LuUsers } from "react-icons/lu";
 import { TbPageBreak } from "react-icons/tb";
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react"
+import {getWishList} from '../Storege/Storege'
+import { RiArrowDropDownLine } from "react-icons/ri";
+
+
+
 const WishList = () => {
-    let wish = getAddWish()  
+
+    let [sorting,setSorting] = useState([])
+    let [sortAdd,setSortAdd] = useState([])
+    useEffect(() => {
+        let sort = getWishList()
+        setSorting(sort);
+        setSortAdd(sort)
+    }, [])
+    let sortBooks =  [...sortAdd]
+    let handleSorting = sortName => {
+        if (sortName === 'totalPages') {
+            let totalPageSort = sortBooks.sort((a,b)=> a.totalPages - b.totalPages)
+            setSorting(totalPageSort)
+            console.log(totalPageSort)
+        }
+        else if(sortName === 'rating'){
+          let ratingSort = sortBooks.sort((a,b)=> a.rating - b.rating)
+          setSorting(ratingSort)
+        }
+        else if(sortName === 'yearOfPublishing'){
+          let yearOfPublishingSort = sortBooks.sort((a,b)=> a.yearOfPublishing - b.yearOfPublishing)
+          setSorting(yearOfPublishingSort)
+        }
+    };
     return (
         <div>
 
+<div className="flex justify-center mt-9 mb-20">
+        <div className="dropdown dropdown-end">
+            <div tabIndex={0} role="button" className="btn m-1 text-white bg-[#23BE0A]">Sort By<RiArrowDropDownLine className="text-[28px]"/></div>
+            <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a onClick={()=>handleSorting('totalPages')}>Totale Pages</a></li>
+              <li><a onClick={()=>handleSorting('rating')}>Rating</a></li>
+              <li><a onClick={()=>handleSorting('yearOfPublishing')}>Year of Publishing</a></li>
+            </ul>
+          </div>
+           </div>
+
+
           {
-            wish.map((wish,index)=>  <div key={index} className="flex flex-col md:flex-row  bg-base-100 shadow-xl my-7">
+            sorting.map((wish,index)=>  <div key={index} className="flex flex-col md:flex-row  bg-base-100 shadow-xl my-7">
             <figure className="px-10 py-6 md:w-[30%] flex justify-center items-center">
               <div className="w-full bg-[#F3F3F3] py-6 flex justify-center items-center rounded-xl">
               <img src={wish.image} />

@@ -1,7 +1,7 @@
 import { useLoaderData, useParams } from "react-router-dom";
-import { saveToStorege } from "../Storege/Storege";
+import { saveToReadList, saveToWishList} from "../Storege/Storege";
 import  { Toaster } from 'react-hot-toast';
-import { saveToStoregeAddWish } from "../Storege/Storege2";
+// import { saveToStoregeAddWish } from "../Storege/Storege";
 
 const BookDetails = () => {
     let books = useLoaderData()
@@ -12,11 +12,11 @@ const BookDetails = () => {
      let {image,bookName,author,tags,rating,category,review,totalPages,publisher,yearOfPublishing} = book
   
    let  handleReadButton = () => {
-        saveToStorege(book)
+        saveToReadList(book)
     }
     let handleWishButton = () => {
-      saveToStoregeAddWish(book)
-      saveToStorege(book)
+      saveToWishList(book)
+      // saveToStorege(book)
     }
     
     return (

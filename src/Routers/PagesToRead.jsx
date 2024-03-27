@@ -1,9 +1,9 @@
-import { getBooks } from "../Storege/Storege";
+import { getReadList } from "../Storege/Storege";
 import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid } from 'recharts';
 const colors = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', 'red', 'pink'];
 
 const PagesToRead = () => {
-    let readedBook = getBooks()
+    let readedBook = getReadList()
     console.log(readedBook)
     const getPath = (x, y, width, height) => {
         return `M${x},${y + height}C${x + width / 3},${y + height} ${x + width / 2},${y + height / 3}

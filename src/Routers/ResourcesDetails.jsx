@@ -6,7 +6,7 @@ const ResourcesDetails = ({res}) => {
     return (
         <div>
             <div className=" dark:text-gray-800 my-14">
-	<div className="container max-w-4xl px-4 md:px-10 py-6 mx-auto rounded-lg shadow-sm dark:bg-gray-50 mb-8">
+	<div className="container max-w-4xl px-4 md:px-10 py-6 mx-auto rounded-lg shadow-sm bg-[#F3F3F3] mb-8">
 		<div className="flex items-center justify-between">
 			<p className= "text-gray-500 font-semibold">Year: <span className="font-normal">{year}</span></p>
             <p className=" text-gray-500 font-semibold">Category: <span className="font-normal">{genre}</span></p>

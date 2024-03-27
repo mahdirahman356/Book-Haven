@@ -1,16 +1,17 @@
-import { getBooks } from "../Storege/Storege";
 import { CiLocationOn } from "react-icons/ci";
 import { useEffect, useState } from "react"
 import { LuUsers } from "react-icons/lu";
 import { TbPageBreak } from "react-icons/tb";
 import { Link } from "react-router-dom";
+import { getReadList} from '../Storege/Storege'
+import { RiArrowDropDownLine } from "react-icons/ri";
+
 
 const Read = () => {
-    // let read = getBooks()
     let [sorting,setSorting] = useState([])
     let [sortAdd,setSortAdd] = useState([])
     useEffect(() => {
-        let sort = getBooks();
+        let sort = getReadList()
         setSorting(sort);
         setSortAdd(sort)
     }, [])
@@ -35,7 +36,7 @@ const Read = () => {
 
 <div className="flex justify-center mt-9 mb-20">
         <div className="dropdown dropdown-end">
-            <div tabIndex={0} role="button" className="btn m-1 text-white bg-[#23BE0A]">Sort By</div>
+            <div tabIndex={0} role="button" className="btn m-1 text-white bg-[#23BE0A]">Sort By<RiArrowDropDownLine className="text-[28px]"/></div>
             <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
               <li><a onClick={()=>handleSorting('totalPages')}>Totale Pages</a></li>
               <li><a onClick={()=>handleSorting('rating')}>Rating</a></li>
