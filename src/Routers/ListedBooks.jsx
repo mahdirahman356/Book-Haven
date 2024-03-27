@@ -1,9 +1,25 @@
 import { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
-
+// import { getBooks } from "../Storege/Storege";
+// import Read from './Read'
 const ListedBooks = () => {
 
     let [tabs,setTabs] = useState(0) 
+    // let [sorting,setSorting] = useState([])
+    // let [sortAdd,setSortAdd] = useState([])
+    // useEffect(() => {
+    //     let sort = getBooks();
+    //     setSorting(sort);
+    //     setSortAdd(sort)
+    // }, [])
+    // let sortBooks =  [...sortAdd]
+    // let handleSorting = sortName => {
+    //     if (sortName === 'totalPages') {
+    //         let total = sortBooks.sort((a,b)=> a.totalPages - b.totalPages)
+    //         setSorting(total)
+    //         console.log(total)
+    //     }
+    // };
     return (
         <div>
             <div className="text-2xl font-bold text-center py-7 bg-[#1313130D] mt-5 rounded-xl">
@@ -27,17 +43,22 @@ const ListedBooks = () => {
 	</p>
 	
 </div>
-          <div className="flex justify-center mt-9 mb-20">
+          {/* <div className="flex justify-center mt-9 mb-20">
         <div className="dropdown dropdown-end">
             <div tabIndex={0} role="button" className="btn m-1 text-white bg-[#23BE0A]">Sort By</div>
             <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
-              <li><a>Item 1</a></li>
+              <li><a onClick={()=>handleSorting('totalPages')}>Totale Pages</a></li>
               <li><a>Item 2</a></li>
             </ul>
           </div>
-           </div>
+           </div> */}
           </div>
-           
+             {/* {
+                sorting.map((sorting,index) => <Read 
+                key={index}
+                sorting={sorting}
+                ></Read>)
+             } */}
             <Outlet></Outlet>
         </div>
     );
