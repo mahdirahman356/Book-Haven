@@ -1,7 +1,6 @@
 import { LuUserCircle2 } from "react-icons/lu";
 
 const ResourcesDetails = ({res}) => {
-    // console.log(res)
     let {title,year,genre,summary,author} = res
     return (
         <div>

@@ -3,7 +3,6 @@ import ResourcesDetails from "./ResourcesDetails";
 
 const Resources = () => {
     let res = useLoaderData()
-    console.log(res)
     return (
         <div className="my-12 md:my-24">
            <div className="px-4">

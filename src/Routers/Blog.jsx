@@ -3,7 +3,6 @@ import BlogDetails from "./BlogDetails";
 
 const Blog = () => {
     let blog = useLoaderData()
-    console.log(blog)
     return (
         <div>
             <div className="text-center my-12 md:my-24">
