@@ -1,5 +1,9 @@
 [
-    
+    {
+        "id": 1,
+        "title": "Classic Novels Everyone Should Read",
+        "description": "Explore the timeless allure of classic literature with our handpicked selection of novels. From Harper Lee's 'To Kill a Mockingbird' and George Orwell's '1984' to Jane Austen's 'Pride and Prejudice,' these masterpieces offer profound insights into humanity's struggles and triumphs. Experience the moral dilemmas of 'To Kill a Mockingbird,' confront the dystopian reality of '1984,' and revel in the romance of 'Pride and Prejudice.' Whether you're a seasoned reader or just starting your literary journey, these classics promise to captivate and inspire."
+    },
     {
       "title": "To Kill a Mockingbird",
       "author": "Harper Lee",

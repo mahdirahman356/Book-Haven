@@ -31,12 +31,11 @@ const router = createBrowserRouter([
       },
       {
         path : '/blog',
-        loader :()=> fetch('/public/Blogs.json'),
         element : <Blog></Blog>
       },
       {
         path : '/resources',
-        loader : ()=> fetch('/public/Resources.json'),
+        // loader : ()=> fetch('/public/Resources.json'),
         element : <Resources></Resources>
        },
       
