@@ -18,7 +18,7 @@ const Navbar = () => {
      <NavLink to="/resources" className={({isActive})=> isActive ? "text-[#23BE0A] rounded-lg" : ''}><li>Resources</li></NavLink>
       </ul>
     </div>
-    <h4 className=" ml-2 btn-ghost text-[18px] md:text-2xl font-bold">Book Vibe</h4>
+    <h4 className=" ml-2 btn-ghost text-[18px] md:text-2xl font-bold">Book Haven</h4>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1 gap-7 font-semibold text-gray-500 items-center">
